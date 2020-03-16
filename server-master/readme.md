@@ -1,26 +1,26 @@
-# 阴阳师小程序后端 
+注意正式环境请更换数据地址：
 
-#License
+    sqlite ---- mysql
+    redis缓存地址请更改
 
-Copyright © RaPoSpectre.
+快速安装环境
 
-All rights reserved.
+    pip3 install -r requiredments.txt -i https://pypi.doubanio.com/simple/  
+ 
+环境模型初始化
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+    python3 manager.py migrate
+    python3 manager.py makemigrations
+    
+创建后台超级用户
 
-Redistributions of source code must retain the above copyright notice, this
-list of conditions and the following disclaimer.
-Redistributions in binary form must reproduce the above copyright notice, this
-list of conditions and the following disclaimer in the documentation and/or
-other materials provided with the distribution.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    python3 manager.py createsuperuser
+        user：admin
+        password: admin
+启动
+
+    python3 manager.py runserver 0.0.0.0:5000
+
+请求后台
+
+    http://127.0.0.1:5000/admin/

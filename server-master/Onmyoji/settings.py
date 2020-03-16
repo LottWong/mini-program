@@ -25,7 +25,7 @@ SECRET_KEY = 'wcvhai1zqughnwf^3@fg_tgjh$ayt$cv8=&q+sl7&%wr*fy1pi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['onmyoji.rapospectre.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
