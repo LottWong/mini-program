@@ -110,10 +110,10 @@ class Serializer(object):
         elif isinstance(data, dict):
             obj_dict = {}
             if self._dict_check:
-                for k, v in data.iteritems():
+                for k, v in data.items():
                     obj_dict[k] = self.data_inspect(v)
             else:
-                for k, v in data.iteritems():
+                for k, v in data.items():
                     if self.check_attr(k):
                         obj_dict[k] = self.data_inspect(v)
             return obj_dict

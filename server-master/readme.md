@@ -19,7 +19,7 @@
         password: admin
 启动
 
-    python3 manage。py runserver 0.0.0.0:5000
+    python3 manage.py runserver 0.0.0.0:5000
 
 请求后台
 

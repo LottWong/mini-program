@@ -11,12 +11,14 @@ Page({
   //事件处理函数
   getPopular: function(){
     var url = http.generateUrl('api/v1/populars');
+    console.log(url)
     var context = this;
     wx.request({
       url: url,
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
-      success: function(res){
+      success: function (res) {
+        console.log("ok")
         // success
         if(res.data.status==1){
           context.setData({
@@ -25,10 +27,12 @@ Page({
         }
       },
       fail: function() {
+        console.log("fail")
         // fail
       },
       complete: function() {
         // complete
+        console.log("complete")
       }
     })
   },

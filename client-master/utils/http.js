@@ -2,7 +2,7 @@
  * Created by RaPoSpectre on 4/20/16.
  */
 
-var HOST_ROOT = "https://onmyoji.rapospectre.com/";
+var HOST_ROOT = "127.0.0.1:5000/";
 
 var hexcase = 0;
 /* hex output format. 0 - lowercase; 1 - uppercase        */
